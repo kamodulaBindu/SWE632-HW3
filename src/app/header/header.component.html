@@ -1,0 +1,21 @@
+<header>
+       
+    <mat-toolbar class="headerbg" fxLayout="column" fxLayout.xs="row">
+        <mat-toolbar-row>
+            <a href= './'><img id="logo" src="assets/images/logo.jpg"></a>
+            <a href="./"  ><span class="header"><h3>muzix</h3></span></a>
+          <span class="spacer"></span>
+          <form class="search">
+                <mat-form-field class="search-text-field" floatLabel="never">
+                    <input #typehead matInput  placeholder="search track" >
+                    <button mat-button matSuffix mat-icon-button aria-label="Search" >
+                    <mat-icon class="example-icon"  aria-hidden="false" aria-label="Example search icon">search</mat-icon>
+                  </button>
+                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                      
+                    </mat-autocomplete>
+                </mat-form-field>
+            </form>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    </header>
